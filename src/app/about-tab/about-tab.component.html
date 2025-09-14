@@ -1,0 +1,24 @@
+<div class="about-section">
+  <div class="about-left">
+    <h2>ABOUT GYMPOINT</h2>
+  </div>
+  <div class="about-right">
+    <p>
+      Gympoint is more than just a fitness center—it's a community dedicated to helping you achieve your health and wellness goals. Our state-of-the-art facilities, expert trainers, and diverse classes are designed to inspire and motivate members of all fitness levels. Whether you're looking to build strength, improve flexibility, or simply stay active, Gympoint offers a welcoming environment for everyone. Join us and experience a new standard in personal training and group fitness. Your journey to a healthier, stronger you starts here.
+    </p>
+  </div>
+</div>
+<div class="features-carousel-section">
+  <div class="carousel-container">
+    <div class="carousel-track" [style.transform]="'translateX(-' + (currentSlide * 100) + '%)'">
+      <ng-container *ngFor="let slide of slides; let i = index">
+        <div class="carousel-slide">
+          <img [src]="slide.img" [alt]="slide.alt" />
+          <div class="carousel-caption">{{ slide.caption }}</div>
+        </div>
+      </ng-container>
+    </div>
+    <button class="carousel-control prev" aria-label="Previous" (click)="prevSlide()">&#10094;</button>
+    <button class="carousel-control next" aria-label="Next" (click)="nextSlide()">&#10095;</button>
+  </div>
+</div>

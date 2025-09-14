@@ -1,0 +1,6 @@
+:host ::ng-deep [data-scroll-container] {
+  min-height: 100vh;
+  display: block;
+  width: 100vw;
+  overflow: visible;
+}
