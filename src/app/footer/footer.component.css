@@ -2,7 +2,6 @@
   background: #111;
   color: #fff;
   padding: 40px 0 0 0;
-  font-family: 'Nunito Sans', sans-serif;
   width: 100%;
 }
 .footer-container {
@@ -140,19 +139,32 @@
 @media (max-width: 767.98px) {
   .footer-container {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     padding: 0 10px;
   }
   .footer-brand, .footer-locations, .footer-social-col {
     flex: unset;
     width: 100%;
     margin-bottom: 16px;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  .footer-logo {
-    font-size: 1.5rem;
+  .footer-logo, .footer-img-logo, .footer-tagline {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    text-align: center;
+  }
+  .footer-links, .footer-location-list, .footer-contact-list {
+    align-items: center;
+    text-align: center;
   }
   .footer-social {
     font-size: 1.5rem;
+    justify-content: center;
+    width: 100%;
   }
 }

@@ -32,4 +32,9 @@ html {
 body {
   min-height: 100vh;
   background: #111;
+  font-stretch: 125%;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, a, span, div, button, input, label, li, ul, ol, th, td {
+  font-stretch: 125%;
 }

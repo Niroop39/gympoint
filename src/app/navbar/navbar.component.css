@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;1000&display=swap');
-
 .navbar {
   padding: 10px 30px;
   z-index: 1030;
@@ -18,13 +16,11 @@
 }
 
 .navbar-nav .nav-link {
-  font-family: 'Nunito Sans', sans-serif;
   font-weight: 800 !important;
-  font-stretch: 125%;
+  font-stretch: 125% !important;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #fff !important;
-  font-size: 16px;
   font-weight: 500;
   transition: color 0.2s;
 }
@@ -35,7 +31,6 @@
 }
 
 .btn-dark {
-  font-family: 'Nunito Sans', sans-serif;
   font-weight: 1000;
   font-stretch: 125%;
   letter-spacing: 2px;
@@ -72,12 +67,7 @@
   outline: none !important;
   box-shadow: none !important;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  width: 28px;
-  height: 28px;
   border-radius: 0;
   z-index: 3000;
   cursor: pointer;
@@ -85,7 +75,7 @@
 
 .navbar-toggler.custom-hamburger .bar {
   display: block;
-  width: 18px;
+  width: 25px;
   height: 2px;
   margin: 3px 0;
   background-color: #fff !important;
@@ -120,7 +110,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(34,34,34,0.95) !important;
+    background: rgba(34,34,34,0.99) !important;
     z-index: 2000;
     display: flex !important;
     flex-direction: column;
