@@ -188,10 +188,6 @@
   align-items: center;
   transition: transform 0.2s, box-shadow 0.2s;
 }
-.highlight-card:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 8px 32px rgba(255,205,50,0.15);
-}
 .highlight-img-wrapper {
   position: relative;
   width: 100%;
@@ -251,10 +247,7 @@
   height: 520px;
   margin-bottom: 0;
 }
-.highlight-card-rect:hover {
-  transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 8px 32px rgba(255,205,50,0.15);
-}
+
 .highlight-img-rect-wrapper {
   position: relative;
   width: 100%;
@@ -309,7 +302,8 @@
 }
 .highlight-content-rect h3 {
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 25px;
+  width: 50px;
   font-weight: 800;
   margin-bottom: 8px;
   text-transform: uppercase;
@@ -321,6 +315,55 @@
   margin: 0;
 }
 
+.join-now-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0 0 0;
+}
+.join-now-card {
+  background: #FFCD32;
+  border-radius: 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+  padding: 40px 32px;
+  max-width: 1200px;
+  width: 90vw;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.join-now-card h2 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 18px;
+  color: #222;
+  text-transform: uppercase;
+}
+.join-now-card p {
+  font-size: 16px;
+  margin-bottom: 24px;
+  font-weight: 400;
+}
+.join-now-card .btn-primary {
+  font-size: 18px;
+  font-weight: 800;
+  border-radius: 0px;
+  padding: 12px 32px;
+  background: transparent;
+  color: #222;
+  border: 2px solid #222;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(34,34,34,0.15);
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.join-now-card .btn-primary:hover {
+  background: #222;
+  color: #FFCD32;
+  border-color: #FFCD32;
+}
 @media (max-width: 991.98px) {
   .about-section {
     flex-direction: column;
@@ -337,7 +380,7 @@
     align-items: flex-start;
   }
   .about-left h2 {
-    font-size: 2rem;
+    font-size: 40px;
     text-align: left;
   }
   .about-right p {
@@ -361,67 +404,85 @@
   .features-carousel-section {
     width: 98vw;
     margin: 0 auto;
-    padding: 0 8px;
+    padding: 0;
   }
   .carousel-container {
     max-width: 98vw;
     min-width: 98vw;
     width: 98vw;
-    border-radius: 18px;
-    padding-left: 8px;
-    padding-right: 8px;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
     min-height: 28vh;
     height: 28vh;
   }
   .carousel-slide img {
     max-width: 98vw;
     width: 98vw;
-    border-radius: 18px;
+    border-radius: 0;
     height: 28vh;
     max-height: 28vh;
-  }
-  .about-left h1 {
-    font-size: 45px;
-  }
-  .carousel-control {
-    font-size: 36px;
-    padding: 4px 8px;
   }
   .highlight-card-rect {
     width: 98vw;
     max-width: 98vw;
     min-width: 98vw;
     height: 220px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 16px;
   }
-  .highlights-section {
-    padding: 32px 0 16px 0;
+  .highlight-card {
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 16px;
   }
-  .highlights-title {
-    font-size: 1.3rem;
-    margin-bottom: 18px;
+  .about-left h1 {
+    font-size: 40px;
+  }
+  .carousel-control {
+    font-size: 36px;
+    padding: 4px 8px;
   }
   .highlights-cards {
     flex-direction: column;
     align-items: center;
     gap: 16px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
-  .highlight-card {
+  .highlight-card,
+  .highlight-card-rect {
+    width: calc(98vw - 24px);
+    max-width: calc(98vw - 24px);
+    min-width: calc(98vw - 24px);
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  .join-now-card {
+    padding: 24px 12px;
+    border-radius: 18px;
     width: 98vw;
     max-width: 98vw;
   }
-  .highlight-card-rect {
-    height: 220px;
+  .join-now-card h2 {
+    font-size: 22px;
   }
-  .highlight-img-rect-wrapper {
-    height: 100%;
+  .join-now-card p {
+    font-size: 15px;
   }
-  .highlight-content-rect {
-    padding: 16px 10px 10px 10px;
+  .join-now-card .btn-primary {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 16px;
+    border: 2px solid #222;
+    background: transparent;
+    color: #222;
   }
-  .highlight-content-rect h3 {
-    font-size: 1.1rem;
-  }
-  .highlight-content-rect p {
-    font-size: 0.95rem;
+  .join-now-card .btn-primary:hover {
+    background: #222;
+    color: #FFCD32;
+    border-color: #FFCD32;
   }
 }

@@ -7,7 +7,7 @@ import { NgIf } from '@angular/common';
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [NgbCollapseModule, RouterModule, NgIf],
+  imports: [NgbCollapseModule, RouterModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
