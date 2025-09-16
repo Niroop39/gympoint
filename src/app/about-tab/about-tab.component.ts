@@ -12,11 +12,6 @@ export class AboutTabComponent {
   currentSlide = 0;
   slides = [
     {
-      img: 'carousel1.jpg',
-      alt: 'Dumbbells and Gym Equipment',
-      caption: 'Dumbbells & Equipment'
-    },
-    {
       img: 'carousel2.jpg',
       alt: 'Barbells and Racks',
       caption: 'Barbells & Racks'
